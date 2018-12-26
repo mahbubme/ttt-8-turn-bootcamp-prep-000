@@ -2,7 +2,7 @@ def display_board ( board )
   
 end
 
-def display_board
+def valid_move (board, index )
   
 end
 
