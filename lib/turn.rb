@@ -14,3 +14,6 @@ def move( board, index )
   
 end
 
+def turn
+
+end
