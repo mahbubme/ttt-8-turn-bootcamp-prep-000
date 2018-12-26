@@ -18,8 +18,8 @@ def position_taken(board, index)
 
 end
 
-def move( board, index )
-  
+def move( board, index, player_character="X" )
+  board[index] = player_character
 end
 
 def input_to_index( input )
@@ -33,5 +33,10 @@ def turn( board )
   
   index = input_to_index( input )
   
-  valid_move?( board, index )
+  if valid_move?( board, index )
+    move( board, index )
+  else
+    turn( board )
+  end
+  
 end
