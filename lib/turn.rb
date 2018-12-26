@@ -18,6 +18,8 @@ def move( board, index )
   
 end
 
+return ( input.chomp.strip.to_i ) - 1
+
 def turn( board )
   puts "Please enter 1-9:"
   
